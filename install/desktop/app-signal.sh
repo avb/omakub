@@ -1,4 +1,4 @@
-if [ "$dpkg --print-architecture" = "arm64" ]; then
+if [ "($dpkg --print-architecture)" = "arm64" ]; then
 	sudo snap install signal-desktop
 fi
 	wget -qO- https://updates.signal.org/desktop/apt/keys.asc | gpg --dearmor >signal-desktop-keyring.gpg
